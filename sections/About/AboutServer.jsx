@@ -29,7 +29,14 @@ export const AboutCardSection = () => (
 );
 
 const AboutCards = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
+  <Tilt
+    options={{
+      max: 45,
+      scale: 1,
+      speed: 450,
+    }}
+    className="xs:w-[250px] w-full"
+  >
     <AboutCardA index={index} icon={icon} title={title} />
   </Tilt>
 );
