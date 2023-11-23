@@ -3,7 +3,7 @@ import {
   HeroWrapper,
   AboutWrapper,
   SkillsWrapper,
-  Projects,
+  ProjectsWrapper,
   Contact,
   StarsCanvas,
 } from "@/sections";
@@ -22,7 +22,7 @@ export default function Home() {
         <SkillsWrapper />
       </section>
       <section className="bg-cover bg-no-repeat bg-center  gradient-2 h-screen  ">
-        <Projects />
+        <ProjectsWrapper />
       </section>
       <section className="bg-cover bg-no-repeat bg-center  gradient-1 h-screen">
         <Contact />

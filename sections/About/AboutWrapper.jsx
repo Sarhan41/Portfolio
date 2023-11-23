@@ -6,7 +6,7 @@ import { AboutCardSection, Text, Text2 } from "./AboutServer";
 
 const AboutWrapper = () => {
   return (
-    <>
+    <section>
       <motion.div
         variants={textVariant()}
         initial={"hidden"}
@@ -23,7 +23,7 @@ const AboutWrapper = () => {
         <Text2 />
       </motion.p>
       <AboutCardSection />
-    </>
+    </section>
   );
 };
 

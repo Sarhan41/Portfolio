@@ -4,8 +4,12 @@ import { motion } from "framer-motion";
 
 const ProjectsWrapper = () => {
   return (
-    <motion.div></motion.div>
-  )
-}
+    <section>
+      <motion.div>
+        
+      </motion.div>
+    </section>
+  );
+};
 
-export default SectionWrapper(ProjectsWrapper , "")
+export default SectionWrapper(ProjectsWrapper, "");
