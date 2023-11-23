@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import SectionWrapper from "../SectionWrapper/SectionWrapper";
+import SectionWrapper from "@/sections/SectionWrapper/SectionWrapper";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "@/constants/motion";
 import { Text, Skills, MainBall } from "./SkillsServer";
