@@ -18,7 +18,7 @@ const AboutWrapper = () => {
         variants={fadeIn("", "", 0.1, 1)}
         initial={"hidden"}
         whileInView={"show"}
-        className="mt-4 text-black-200 dark:text-light-200 text-[17px] max-w-3xl leading-[30px]"
+        className="mt-3 text-black-200 dark:text-light-200 text-[17px] max-w-3xl leading-[30px]"
       >
         <Text2 />
       </motion.p>

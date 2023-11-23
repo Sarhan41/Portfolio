@@ -21,10 +21,10 @@ export default function Home() {
       <section className="bg-cover bg-no-repeat bg-center  gradient-1  min-h-screen ">
         <SkillsWrapper />
       </section>
-      <section className="bg-cover bg-no-repeat bg-center  gradient-2 h-screen  ">
+      <section className="bg-cover bg-no-repeat bg-center  gradient-2 min-h-screen  ">
         <ProjectsWrapper />
       </section>
-      <section className="bg-cover bg-no-repeat bg-center  gradient-1 h-screen">
+      <section className="bg-cover bg-no-repeat bg-center  gradient-1 min-h-screen">
         <Contact />
         <StarsCanvas />
       </section>

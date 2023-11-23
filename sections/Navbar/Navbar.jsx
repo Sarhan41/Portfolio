@@ -68,7 +68,7 @@ const Navbar = () => {
               } `}
               onClick={() => setActive(link.name)}
             >
-              {link.name}
+              <li>{link.name}</li>
             </Link>
           ))}
         </ul>
