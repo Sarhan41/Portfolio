@@ -7,7 +7,7 @@ import { Text, Skills, MainBall } from "./SkillsServer";
 
 const SkillsWrapper = () => {
   return (
-    <>
+    <section>
       <motion.div
         variants={textVariant()}
         initial={"hidden"}
@@ -18,7 +18,7 @@ const SkillsWrapper = () => {
       <div className="flex flex-row flex-wrap justify-center gap-10 mt-20">
         <Skills />
       </div>
-    </>
+    </section>
   );
 };
 
