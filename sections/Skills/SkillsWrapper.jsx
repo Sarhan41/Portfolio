@@ -22,7 +22,7 @@ const SkillsWrapper = () => {
   );
 };
 
-export const Motiondiv = ({ icon, name, index }) => (
+export const MotiondivRight = ({ icon, name, index }) => (
     <motion.div
       className="w-28 h-28"
       variants={fadeIn("right", "spring", index * 0.1)}
@@ -33,5 +33,18 @@ export const Motiondiv = ({ icon, name, index }) => (
       <MainBall  name={name} icon={icon} key={`${name}-${index}`}/>
     </motion.div>
 );
+export const MotiondivLeft = ({ icon, name, index }) => (
+    <motion.div
+      className="w-28 h-28"
+      variants={fadeIn("left", "spring", index * 0.2)}
+      initial={"hidden"}
+      whileInView={"show"}
+    >
+
+      <MainBall  name={name} icon={icon} key={`${name}-${index}`}/>
+    </motion.div>
+);
+
+
 
 export default SectionWrapper(SkillsWrapper, "skills");

@@ -1,6 +1,6 @@
 import { skillsBall } from "@/constants";
 import BallCanvas from "./Ball";
-import { Motiondiv } from "./SkillsWrapper";
+import {  MotiondivLeft, MotiondivRight } from "./SkillsWrapper";
 
 export const Text = () => {
   return (
@@ -12,10 +12,20 @@ export const Text = () => {
 };
 
 export const Skills = () => {
+  const RightSkill =  skillsBall.slice(0,7)
+  const LeftSkill = skillsBall.slice(7)
   return (
     <>
-      {skillsBall.map((ball, index) => (
-        <Motiondiv
+      {RightSkill.map((ball, index) => (
+        <MotiondivRight
+          icon={ball.icon}
+          name={ball.name}
+          index={index}
+          key={`${ball.name}-${index}`}
+        />
+      ))}
+      {LeftSkill.map((ball, index) => (
+        <MotiondivLeft
           icon={ball.icon}
           name={ball.name}
           index={index}
