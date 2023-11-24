@@ -21,4 +21,4 @@ const HeroWrapper = () => {
   );
 };
 
-export default HeroWrapper
+export default HeroWrapper;
