@@ -4,7 +4,6 @@ import SectionWrapper from "@/sections/SectionWrapper/SectionWrapper";
 import { motion } from "framer-motion";
 import  Form, { Text } from "./ContactServer";
 import { useState } from "react";
-import ComputersCanvas from "../Hero/ComputerCanvas";
 
 const ContactWrapper = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
