@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import { NavLinks } from "@/constants";
-import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
 import { BiMenuAltLeft } from "react-icons/bi";
@@ -34,10 +33,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full flex-between paddingX py-2 top-0 fixed z-20 ${
+      className={`w-full flex paddingX py-2 top-0 fixed z-20 ${
         scroll ? "bg-[#f5da9b42] dark:bg-[#2d010166]" : "bg-transparent"
       }`}
     >
+       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+
       <Link
         href="/"
         scroll={false}
@@ -119,6 +120,7 @@ const Navbar = () => {
           ))}{" "}
         </ul>
       </div>
+       </div>
     </nav>
   );
 };
