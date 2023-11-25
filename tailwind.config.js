@@ -37,4 +37,3 @@ module.exports = {
   },
   plugins: [],
 };
-// D3D3D3
