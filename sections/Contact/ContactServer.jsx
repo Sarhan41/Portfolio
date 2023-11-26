@@ -16,9 +16,14 @@ const Form = ({
   isSubmitting,
   handleChange,
   handleSubmit,
+  formRef,
 }) => {
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-8">
+    <form
+      ref={formRef}
+      onSubmit={handleSubmit}
+      className="flex flex-col gap-4 mt-8"
+    >
       <label className="flex flex-col">
         <span className="dark:text-light-100 text-black-100 font-medium mb-4">
           Your Name
