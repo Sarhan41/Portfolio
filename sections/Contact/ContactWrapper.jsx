@@ -93,7 +93,7 @@ const ContactWrapper = () => {
         variants={fadeIn("up", "spring", "", 0.75)}
         initial={"hidden"}
         whileInView={"show"}
-        className="flex justify-around gap-12 mb-8"
+        className="flex justify-around gap-12 max-xs:gap-6 mb-8"
       >
         <SocialMedia />
       </motion.span>

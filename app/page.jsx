@@ -6,11 +6,13 @@ import {
   ProjectsWrapper,
   ContactWrapper,
   StarsCanvas,
+  DisplayBlocker,
 } from "@/sections";
 
 export default function Home() {
   return (
     <main className="relative z-0 ">
+      <DisplayBlocker />
       <section className="bg-cover bg-no-repeat bg-center  gradient-1    ">
         <Navbar />
         <HeroWrapper />

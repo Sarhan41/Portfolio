@@ -5,6 +5,7 @@ import ProjectsWrapper from "./Projects/ProjectsWrapper";
 import ContactWrapper from "./Contact/ContactWrapper";
 import SkillsWrapper from "./Skills/SkillsWrapper";
 import SectionWrapper from "./SectionWrapper/SectionWrapper";
+import DisplayBlocker from "./DisplayBlocker/DisplayBlocker";
 
 export {
   Navbar,
@@ -14,4 +15,5 @@ export {
   SkillsWrapper,
   HeroWrapper,
   SectionWrapper,
+  DisplayBlocker
 };
