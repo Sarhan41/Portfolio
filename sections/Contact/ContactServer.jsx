@@ -1,4 +1,7 @@
 import React from "react";
+import { BsTwitter } from "react-icons/bs";
+import { FaEnvelope, FaGithub } from "react-icons/fa";
+import { GrLinkedinOption } from "react-icons/gr";
 
 export const Text = () => {
   return (
@@ -17,7 +20,10 @@ const Form = ({
   handleChange,
   handleSubmit,
   formRef,
+  isEmailValid,
 }) => {
+
+
   return (
     <form
       ref={formRef}
@@ -57,7 +63,7 @@ const Form = ({
         <textarea
           rows={7}
           name="message"
-          placeholder="What's your good name?"
+          placeholder="What you want to Say?"
           value={message}
           onChange={handleChange}
           className=" py-4 px-6 placeholder:text-slate-600 bg-light-gray text-black-200 rounded-lg outline-none border-none font-medium"
@@ -75,3 +81,36 @@ const Form = ({
 };
 
 export default Form;
+
+export const SocialMedia = () => (
+  <>
+    <a
+      href="https://www.linkedin.com/in/sarhan-patel-20241c"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <GrLinkedinOption className=" mt-8 ml-4 h-8 w-8 cursor-pointer hover:text-blue-600 dark:hover:text-blue-600 dark:text-light-200 text-black-200" />
+    </a>
+    <a
+      href="https://twitter.com/SarhanWebDev"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <BsTwitter className=" mt-8 ml-4 h-8 w-8 cursor-pointer hover:text-blue-400 dark:hover:text-blue-400 dark:text-light-200 text-black-200" />
+    </a>
+    <a
+      href="mailto:sp.webdev2024@gmail.com?..."
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaEnvelope className=" mt-8 ml-4 h-8 w-8 cursor-pointer hover:text-red-400 dark:hover:text-red-400 dark:text-light-200 text-black-200" />
+    </a>
+    <a
+      href="https://github.com/Sarhan41"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaGithub className=" mt-8 ml-4 h-8 w-8 cursor-pointer hover:text-gray-400 dark:hover:text-gray-400 dark:text-light-200 text-black-200" />
+    </a>
+  </>
+);

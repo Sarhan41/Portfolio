@@ -46,6 +46,7 @@ const Navbar = () => {
           setActive("");
           window.scrollTo(0, 0);
         }}
+        className="text-black dark:text-white"
       >
         <Logo />
       </Link>

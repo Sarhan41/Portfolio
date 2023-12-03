@@ -13,14 +13,12 @@
     "@react-three/drei": "^9.88.17",
     "@react-three/fiber": "^8.15.11",
     "framer-motion": "^10.16.4",
-    "maath": "^0.10.4",
     "next": "14.0.1",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.11.0",
     "react-parallax-tilt": "^1.7.172",
-    "three": "^0.158.0",
-    "three-gltf-loader": "^1.111.0"
+    "three": "^0.158.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

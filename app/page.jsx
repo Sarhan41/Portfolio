@@ -24,9 +24,8 @@ export default function Home() {
       <section className="bg-cover bg-no-repeat bg-center  gradient-2 min-h-screen  ">
         <ProjectsWrapper />
       </section>
-      <section className="bg-cover bg-no-repeat bg-center z-0 relative gradient-1 min-h-screen">
+      <section className="bg-cover bg-no-repeat bg-center   gradient-1 min-h-screen">
         <ContactWrapper />
-        {/* <StarsCanvas /> */}
       </section>
     </main>
   );

@@ -231,7 +231,10 @@
 }
 
 
+
 @layer utilities {
+ 
+
   .bg-gradient-dark {
     background: linear-gradient(135deg, #000000, #801d1d, #040404, #000000);
   }
@@ -303,3 +306,6 @@
     );
   }
 }
+
+
+

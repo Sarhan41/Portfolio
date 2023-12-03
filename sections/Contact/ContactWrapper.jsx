@@ -1,45 +1,112 @@
 "use client";
-import { slideIn } from "@/constants/motion";
+import { fadeIn, slideIn } from "@/constants/motion";
 import SectionWrapper from "@/sections/SectionWrapper/SectionWrapper";
 import { motion } from "framer-motion";
-import Form, { Text } from "./ContactServer";
-import { Suspense, useRef, useState } from "react";
+import Form, { SocialMedia, Text } from "./ContactServer";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import Alert from "./Alert";
 
 const ContactWrapper = () => {
   const formRef = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [alert, setAlert] = useState(null);
+
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
   });
 
+  const showAlert = (type, text) => {
+    setAlert({ type, text });
+  };
+
+  const closeAlert = () => {
+    setAlert(null);
+  };
+
   const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
+    const { name, value } = e.target;
 
     setForm({
       ...form,
       [name]: value,
     });
   };
+  const isEmailValid = form.email && form.email.trim() !== "";
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setIsSubmitting(!isSubmitting);
+    setIsSubmitting(true);
+
+    if (!isEmailValid) {
+      
+      showAlert("danger", "Please enter a valid email.");
+      setIsSubmitting(false);
+      return;
+    } else {
+
+      emailjs
+        .send(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+          {
+            from_name: form.name,
+            to_name: "Sarhan",
+            from_email: form.email,
+            to_email: process.env.NEXT_PUBLIC_TO_EMAIL,
+            message: form.message,
+          },
+          process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+        )
+        .then(
+          () => {
+            setIsSubmitting(false);
+            showAlert(
+              "success",
+              "Thank you. I will get back to you as soon as possible."
+            );
+
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            });
+          },
+          (error) => {
+            setIsSubmitting(false);
+            console.error(error);
+
+            showAlert(
+              "danger",
+              "Sorry, something went wrong. Please try again."
+            );
+          }
+        );
+    }
   };
 
- 
-
   return (
-    <div className="xl:mt-12 flex xl:flex-row flex-col gap-10 overflow-hidden">
+    <div className="flex-center flex-col">
+      <motion.span
+        variants={fadeIn("up", "spring", "", 0.75)}
+        initial={"hidden"}
+        whileInView={"show"}
+        className="flex justify-around gap-12 mb-8"
+      >
+        <SocialMedia />
+      </motion.span>
       <motion.div
         variants={slideIn("left", "spring", 0.2, 1)}
         initial={"hidden"}
         whileInView={"show"}
-        className="flex-[0.75]  p-8 rounded-2xl dark:bg-black-100 bg-secondary"
+        className="w-full mx-auto p-8 md:max-w-xl rounded-2xl dark:bg-black-100  bg-secondary"
       >
         <Text />
+        {alert && (
+          <Alert type={alert.type} text={alert.text} onClose={closeAlert} />
+        )}
         <Form
           name={form.name}
           email={form.email}
@@ -48,16 +115,8 @@ const ContactWrapper = () => {
           handleSubmit={handleSubmit}
           isSubmitting={isSubmitting}
           formRef={formRef}
+          isEmailValid={isEmailValid}
         />
-      </motion.div>
-
-      <motion.div
-        variants={slideIn("right", "spring", 0.2, 1)}
-        initial={"hidden"}
-        whileInView={"show"}
-        className="lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px] "
-      >
-       
       </motion.div>
     </div>
   );
