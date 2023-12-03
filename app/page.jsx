@@ -5,7 +5,6 @@ import {
   SkillsWrapper,
   ProjectsWrapper,
   ContactWrapper,
-  StarsCanvas,
   DisplayBlocker,
 } from "@/sections";
 
