@@ -66,11 +66,11 @@
 }
 
 .Navmenu {
-  @apply dark:red-gradient yellow-gradient ;
+  @apply dark:red-gradient yellow-gradient;
 }
 
 .heroLine {
-  @apply dark:yellowline-gradient redline-gradient ;
+  @apply dark:yellowline-gradient redline-gradient;
 }
 
 .hash-span {
@@ -230,23 +230,23 @@
   -webkit-text-fill-color: transparent;
 }
 
-
-
 @layer utilities {
- 
-
   .bg-gradient-dark {
     background: linear-gradient(135deg, #000000, #801d1d, #040404, #000000);
+    width: 100% !important;
   }
   .bg-gradient-dark-second {
     background: linear-gradient(45deg, #000000, #801d1d, #040404, #000000);
+    width: 100% !important;
   }
   .bg-gradient-light {
     background: linear-gradient(135deg, #ffffff, #ffffa0, #f4f4f4, #ffffff);
+    width: 100% !important;
   }
 
   .bg-gradient-light-second {
     background: linear-gradient(45deg, #ffffff, #ffffa0, #f4f4f4, #ffffff);
+    width: 100% !important;
   }
 
   .red-gradient {
@@ -294,18 +294,7 @@
     );
   }
   .green-pink-gradient {
-    background: linear-gradient(
-      90.13deg,
-      #00cea8 97.2% ,
-      #bf61ff  1.9%
-    );
-    background: -webkit-linear-gradient(
-      90.13deg,
-      #00cea8 97.2% ,
-      #bf61ff  1.9%
-    );
+    background: linear-gradient(90.13deg, #00cea8 97.2%, #bf61ff 1.9%);
+    background: -webkit-linear-gradient(90.13deg, #00cea8 97.2%, #bf61ff 1.9%);
   }
 }
-
-
-
