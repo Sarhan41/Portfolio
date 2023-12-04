@@ -39,7 +39,7 @@ const Navbar = () => {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
-        scroll={false}
+         scroll={false}
           href="/"
           onClick={() => {
             setActive("");
