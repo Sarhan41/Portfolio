@@ -43,7 +43,7 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0);
           }}
-          className="text-black dark:text-white"
+          className="text-black dark:text-white cursor-pointer"
         >
           <Logo />
         </span>
