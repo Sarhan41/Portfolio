@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
 />
 
       </head>
-      <body className="dark:bg-black dark:text-white">{children}</body>
+      <body className="dark:bg-black dark:text-white overflow-hidden">{children}</body>
     </html>
   );
 }
