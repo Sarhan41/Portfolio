@@ -13,7 +13,6 @@ export default function RootLayout({ children }) {
 
 
 
-        {/* Other head elements */}
       </head>
       <body className="dark:bg-black dark:text-white">{children}</body>
     </html>
