@@ -38,7 +38,9 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <span
+        <Link
+        scroll={false}
+          href="/"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
@@ -46,7 +48,7 @@ const Navbar = () => {
           className="text-black dark:text-white cursor-pointer"
         >
           <Logo />
-        </span>
+        </Link>
         <div className="flex gap-16">
           {/* //
         //? Desktop Navigation

@@ -58,19 +58,19 @@
 }
 
 .gradient-1 {
-  @apply dark:bg-gradient-dark bg-gradient-light;
+  @apply dark:bg-gradient-dark bg-gradient-light w-full;
 }
 
 .gradient-2 {
-  @apply dark:bg-gradient-dark-second bg-gradient-light-second;
+  @apply dark:bg-gradient-dark-second bg-gradient-light-second w-full;
 }
 
 .Navmenu {
-  @apply dark:red-gradient yellow-gradient;
+  @apply dark:red-gradient yellow-gradient ;
 }
 
 .heroLine {
-  @apply dark:yellowline-gradient redline-gradient;
+  @apply dark:yellowline-gradient redline-gradient ;
 }
 
 .hash-span {
