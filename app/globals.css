@@ -11,7 +11,9 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
-
+body {
+  overflow-x: hidden;
+}
 .flex-start {
   @apply flex justify-start items-start;
 }
@@ -29,7 +31,7 @@
 }
 
 .paddingX {
-  @apply sm:px-16 px-6;
+  @apply sm:px-16 px-4;
 }
 
 .paddingY {
