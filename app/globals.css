@@ -36,7 +36,7 @@ body {
 }
 
 .paddingX {
-  @apply sm:px-16 px-6 overflow-x-hidden;
+  @apply sm:px-16 px-6 ;
 }
 
 .paddingY {

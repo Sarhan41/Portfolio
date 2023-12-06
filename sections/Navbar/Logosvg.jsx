@@ -2,7 +2,7 @@ import React from 'react'
 
 const Logosvg = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="50"  height="45" className='fill-black dark:fill-white'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="50"  height="45" className=' dark:fill-white'>
 
     <svg viewBox="0 0 320 360" preserveAspectRatio="xMidYMid meet" height="100%" width="100%">
       <svg height="360" width="320">
