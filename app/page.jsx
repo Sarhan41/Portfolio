@@ -3,7 +3,7 @@ import {
   Hero,
   About,
   Skills,
-  ProjectsWrapper,
+  Projects,
   ContactWrapper,
   DisplayBlocker,
 } from "@/sections";
@@ -23,7 +23,7 @@ export default function Home() {
         <Skills />
       </section>
       <section className="bg-cover bg-no-repeat bg-center  gradient-2 min-h-screen  ">
-        <ProjectsWrapper />
+        <Projects />
       </section>
       <section className="bg-cover bg-no-repeat bg-center   gradient-1 min-h-screen">
         <ContactWrapper />

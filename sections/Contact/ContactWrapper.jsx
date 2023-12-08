@@ -41,12 +41,10 @@ const ContactWrapper = () => {
     setIsSubmitting(true);
 
     if (!isEmailValid) {
-      
       showAlert("danger", "Please enter a valid email.");
       setIsSubmitting(false);
       return;
     } else {
-
       emailjs
         .send(
           process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
