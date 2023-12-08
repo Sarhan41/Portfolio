@@ -1,4 +1,4 @@
-import HeroWrapper from "./Hero/HeroWrapper";
+import Hero from "./Hero/Hero";
 import Navbar from "./Navbar/Navbar";
 import AboutWrapper from "./About/AboutWrapper";
 import ProjectsWrapper from "./Projects/ProjectsWrapper";
@@ -9,11 +9,11 @@ import DisplayBlocker from "./DisplayBlocker/DisplayBlocker";
 
 export {
   Navbar,
+  Hero,
   AboutWrapper,
   ProjectsWrapper,
   ContactWrapper,
   SkillsWrapper,
-  HeroWrapper,
   SectionWrapper,
-  DisplayBlocker
+  DisplayBlocker,
 };

@@ -1,6 +1,6 @@
 import {
   Navbar,
-  HeroWrapper,
+  Hero,
   AboutWrapper,
   SkillsWrapper,
   ProjectsWrapper,
@@ -14,7 +14,7 @@ export default function Home() {
       <DisplayBlocker />
       <section className="bg-cover bg-no-repeat bg-center  gradient-1    ">
         <Navbar />
-        <HeroWrapper />
+        <Hero />
       </section>
       <section className="bg-cover bg-no-repeat bg-center  gradient-2  min-h-screen ">
         <AboutWrapper />
