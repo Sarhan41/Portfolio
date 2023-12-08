@@ -1,11 +1,11 @@
 import { slideIn } from "@/constants/motion";
-import { MotionDiv } from "@/constants/MotionElement";
+import { MotionDiv } from "@/constants/MotionElements";
 import Link from "next/link";
 import { GrLinkedinOption } from "react-icons/gr";
 import { BsTwitter } from "react-icons/bs";
 import { TypingText } from "@/sections/Hero/AnimatedText";
 
-const HeroWrapper = () => {
+const Hero = () => {
   return (
     <section className="relative w-full mx-auto h-screen ">
       <MotionDiv
@@ -85,4 +85,4 @@ const HeroWrapper = () => {
   );
 };
 
-export default HeroWrapper;
+export default Hero;
