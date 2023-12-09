@@ -24,7 +24,7 @@ const Skills = () => {
         {RightSkill.map((ball, index) => (
           <MotionDiv
             className="w-28 h-28"
-            variants={fadeIn("right", "spring", index * 0.1)}
+            key={`${ball.name}+${index}`}
             initial={"hidden"}
             whileInView={"show"}
           >
