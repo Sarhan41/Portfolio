@@ -32,7 +32,11 @@ const About = () => {
       </MotionP>
       <div className="mt-20 flex flex-wrap gap-10">
         {aboutCards.map((about, index) => (
-          <AboutCards key={about.title} index={index} {...about} />
+          <AboutCards
+            key={`${about.title}+${index}`}
+            index={index}
+            {...about}
+          />
         ))}
       </div>
     </section>
@@ -40,10 +44,7 @@ const About = () => {
 };
 
 export const AboutCards = ({ index, title, icon }) => (
-  <TiltCard
- 
-    className="xs:w-[250px] w-full"
-  >
+  <TiltCard className="xs:w-[250px] w-full">
     <MotionDiv
       variants={fadeIn("right", "spring", index * 0.2)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
