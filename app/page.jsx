@@ -4,7 +4,7 @@ import {
   About,
   Skills,
   Projects,
-  ContactWrapper,
+  Contact,
   DisplayBlocker,
 } from "@/sections";
 
@@ -26,7 +26,7 @@ export default function Home() {
         <Projects />
       </section>
       <section className="bg-cover bg-no-repeat bg-center   gradient-1 min-h-screen">
-        <ContactWrapper />
+        <Contact />
       </section>
     </main>
   );

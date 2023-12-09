@@ -1,4 +1,3 @@
-// Alert.js
 import React, { useState, useEffect } from "react";
 
 const Alert = ({ type, text, onClose }) => {
@@ -7,8 +6,8 @@ const Alert = ({ type, text, onClose }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsVisible(false);
-      onClose(); // Optional: If you want to perform any action when the alert closes.
-    }, 5000); // Adjust the duration as needed (currently set to 5 seconds).
+      onClose(); 
+    }, 5000);
 
     return () => clearTimeout(timeout);
   }, [onClose]);

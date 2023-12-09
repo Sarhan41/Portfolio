@@ -3,8 +3,7 @@ import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
-import ContactWrapper from "./Contact/ContactWrapper";
-import SectionWrapper from "./SectionWrapper/SectionWrapper";
+import Contact from "./Contact/Contact";
 import DisplayBlocker from "./DisplayBlocker/DisplayBlocker";
 
 export {
@@ -13,7 +12,6 @@ export {
   About,
   Skills,
   Projects,
-  ContactWrapper,
-  SectionWrapper,
+  Contact,
   DisplayBlocker,
 };

@@ -38,10 +38,11 @@ const Skills = () => {
           <MotionDiv
             className="w-28 h-28"
             variants={fadeIn("left", "spring", index * 0.1)}
+            key={`${ball.name}+${index}`}
             initial={"hidden"}
             whileInView={"show"}
           >
-            <BallCanvas icon={ball.icon} />
+            <BallCanvas  icon={ball.icon} />
             <h1 className="block text-center text-lg font-semibold text-black-200 dark:text-light-200 mt-2">
               {ball.name}
             </h1>

@@ -8,7 +8,8 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
-import CanvasLoader from "@/constants/Loader";
+import { Html, useProgress } from "@react-three/drei";
+
 
 // Ball component
 const Ball = ({ img }) => {
@@ -54,5 +55,21 @@ const BallCanvas = ({ icon }) => {
     </Canvas>
   );
 };
+
+
+const CanvasLoader = () => {
+  const { progress } = useProgress();
+
+  return (
+    <Html>
+      <span className="canvas-loader"></span>
+      <p className="text-white font-bold text-lg mt-10">
+        {progress.toFixed(2)}%
+      </p>
+    </Html>
+  );
+};
+
+
 
 export default BallCanvas;
