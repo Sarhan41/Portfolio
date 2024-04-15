@@ -28,7 +28,7 @@ const Hero = () => {
             </h1>
             <h3 className="font-mono ">
               <TypingText
-                title="I'm a Frontend Developer"
+                title="I'm a FullStack Developer"
                 textStyles=" text-black-200 dark:text-light-200"
               />
             </h3>
