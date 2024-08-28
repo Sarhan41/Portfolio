@@ -4,6 +4,8 @@ import { fadeIn, textVariant } from "@/constants/motion";
 import React from "react";
 import BallCanvas from "./Ball";
 
+const LazyBallCanvas = React.lazy(() => import('./Ball'));
+
 const Skills = () => {
   const RightSkill = skillsBall.slice(0, 7);
   const LeftSkill = skillsBall.slice(7);
@@ -28,7 +30,7 @@ const Skills = () => {
             initial={"hidden"}
             whileInView={"show"}
           >
-            <BallCanvas icon={ball.icon} />
+            <LazyBallCanvas icon={ball.icon} />
             <h1 className="block text-center text-lg font-semibold text-black-200 dark:text-light-200 mt-2">
               {ball.name}
             </h1>
@@ -42,7 +44,7 @@ const Skills = () => {
             initial={"hidden"}
             whileInView={"show"}
           >
-            <BallCanvas  icon={ball.icon} />
+            <LazyBallCanvas  icon={ball.icon} />
             <h1 className="block text-center text-lg font-semibold text-black-200 dark:text-light-200 mt-2">
               {ball.name}
             </h1>

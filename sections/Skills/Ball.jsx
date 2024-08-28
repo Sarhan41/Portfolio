@@ -1,5 +1,5 @@
 "use client";
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -10,10 +10,12 @@ import {
 } from "@react-three/drei";
 import { Html, useProgress } from "@react-three/drei";
 
-
 // Ball component
 const Ball = ({ img }) => {
-  const [decal] = useTexture([img]);
+  const [decal, setDecal] = useState(null);
+  const texture = useTexture(img, () => setDecal(texture));
+
+  if (!decal) return null;
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -56,7 +58,6 @@ const BallCanvas = ({ icon }) => {
   );
 };
 
-
 const CanvasLoader = () => {
   const { progress } = useProgress();
 
@@ -69,7 +70,5 @@ const CanvasLoader = () => {
     </Html>
   );
 };
-
-
 
 export default BallCanvas;
