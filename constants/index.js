@@ -54,6 +54,10 @@ export const skillsBall = [
     icon: "/reactjs.png",
   },
   {
+    name: "Node JS",
+    icon: "/nodejs.png",
+  },
+  {
     name: "Next JS",
     icon: "/next.png",
   },
@@ -64,10 +68,6 @@ export const skillsBall = [
   {
     name: "Tailwind ",
     icon: "/tailwind.png",
-  },
-  {
-    name: "Node JS",
-    icon: "/nodejs.png",
   },
   {
     name: "MongoDB",

@@ -2,7 +2,6 @@ import { skillsBall } from "@/constants";
 import { MotionDiv } from "@/constants/MotionElements";
 import { fadeIn, textVariant } from "@/constants/motion";
 import React from "react";
-import BallCanvas from "./Ball";
 
 const LazyBallCanvas = React.lazy(() => import('./Ball'));
 
@@ -36,6 +35,7 @@ const Skills = () => {
             </h1>
           </MotionDiv>
         ))}
+        <div className="flex flex-row max-sm:hidden flex-wrap justify-center gap-10 ">
         {LeftSkill.map((ball, index) => (
           <MotionDiv
             className="w-28 h-28"
@@ -50,6 +50,8 @@ const Skills = () => {
             </h1>
           </MotionDiv>
         ))}
+        </div>
+     
       </div>
     </section>
   );
