@@ -89,42 +89,43 @@ export const skillsBall = [
 
 export const projects = [
   {
-    name: "Nike landing page",
+    name: "Pleasure Fashion",
     description:
-      "A dynamic landing page inspired by Nike's design principles. Created using React, Tailwind CSS, and built with Vite for a fast and efficient development experience.",
+      "A real live full-stack e-commerce platform for ladies' undergarments and clothing. Built with Next.js, styled with Tailwind CSS, and powered by Prisma for sleek design and efficient data management.",
+
     tags: [
       {
-        name: "react",
+        name: "Next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind css",
+        name: "Tailwind CSS",
         color: "green-text-gradient",
       },
       {
-        name: "vite",
+        name: "Prisma",
         color: "pink-text-gradient",
       },
     ],
-    image: "/nike.png",
-    source_code_link: "https://github.com/Sarhan41/Nike",
-    live_demo_link: "https://nikelanding-page.vercel.app",
+    image: "/pleasure.png",
+    source_code_link: "https://github.com/Sarhan41/Pleasure",
+    live_demo_link: "https://pleasure.fashion",
   },
   {
     name: "Youtube Clone",
     description:
-      "A web-based clone that recreates the familiar platform for users to discover and watch a wide range of videos,Developed using React and Material UI.",
+      "A web-based clone of YouTube that allows users to discover and watch a wide range of videos. Developed using React and Material UI for a user-friendly interface.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "material ui",
+        name: "Material UI",
         color: "green-text-gradient",
       },
       {
-        name: "rapid api",
+        name: "Rapid API",
         color: "pink-text-gradient",
       },
     ],
@@ -132,27 +133,26 @@ export const projects = [
     source_code_link: "https://github.com/Sarhan41/Youtube_clone",
     live_demo_link: "https://youtube-clo.vercel.app",
   },
-
   {
-    name: "UnShot",
+    name: "Navrang",
     description:
-      "Web application that leverages the Unsplash API for accessing high-quality images. Developed using React, Unsplash API, and styled with Material UI components.",
+      "A custom website developed for Navrang Restaurant, featuring server-side rendering with Next.js, modern styling with Tailwind CSS, and dynamic functionality using React for an engaging user experience.",
     tags: [
       {
-        name: "react",
+        name: "Next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "Unsplash Aai",
+        name: "Tailwind CSS",
         color: "green-text-gradient",
       },
       {
-        name: "material ui",
+        name: "React",
         color: "pink-text-gradient",
       },
     ],
-    image: "/unshot.png",
-    source_code_link: "https://github.com/Sarhan41/UnShot",
-    live_demo_link: "https://un-shot.vercel.app/searchTerm/amazing",
+    image: "/Navrang.png",
+    source_code_link: "https://github.com/Sarhan41/Navrang_Hotel",
+    live_demo_link: "https://www.navrangsandwichpizza.in/",
   },
 ];
