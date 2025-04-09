@@ -89,27 +89,26 @@ export const skillsBall = [
 
 export const projects = [
   {
-    name: "Pleasure Fashion",
+    name: "Nike landing page",
     description:
-      "A real live full-stack e-commerce platform for ladies' undergarments and clothing. Built with Next.js, styled with Tailwind CSS, and powered by Prisma for sleek design and efficient data management.",
-
+      "A dynamic landing page inspired by Nike's design principles. Created using React, Tailwind CSS, and built with Vite for a fast and efficient development experience.",
     tags: [
       {
-        name: "Next.js",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "Tailwind CSS",
+        name: "tailwind css",
         color: "green-text-gradient",
       },
       {
-        name: "Prisma",
+        name: "vite",
         color: "pink-text-gradient",
       },
     ],
-    image: "/pleasure.png",
-    source_code_link: "https://github.com/Sarhan41/Pleasure",
-    live_demo_link: "https://pleasure.fashion",
+    image: "/nike.png",
+    source_code_link: "https://github.com/Sarhan41/Nike",
+    live_demo_link: "https://nikelanding-page.vercel.app",
   },
   {
     name: "Youtube Clone",
@@ -134,25 +133,25 @@ export const projects = [
     live_demo_link: "https://youtube-clo.vercel.app",
   },
   {
-    name: "Navrang",
+    name: "UnShot",
     description:
-      "A custom website developed for Navrang Restaurant, featuring server-side rendering with Next.js, modern styling with Tailwind CSS, and dynamic functionality using React for an engaging user experience.",
+      "Web application that leverages the Unsplash API for accessing high-quality images. Developed using React, Unsplash API, and styled with Material UI components.",
     tags: [
       {
-        name: "Next.js",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "Tailwind CSS",
+        name: "Unsplash Aai",
         color: "green-text-gradient",
       },
       {
-        name: "React",
+        name: "material ui",
         color: "pink-text-gradient",
       },
     ],
-    image: "/Navrang.png",
-    source_code_link: "https://github.com/Sarhan41/Navrang_Hotel",
-    live_demo_link: "https://www.navrangsandwichpizza.in/",
+    image: "/unshot.png",
+    source_code_link: "https://github.com/Sarhan41/UnShot",
+    live_demo_link: "https://un-shot.vercel.app/searchTerm/amazing",
   },
 ];
